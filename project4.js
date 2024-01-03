@@ -77,7 +77,7 @@ delay:0.5
     trigger:".page1>h1",
 scroller:".main",
 // markers:true,
-start:"top 10%",// ye relatively batayega top se kitna dur agar 50% matlab 50% dur
+start:"top 14%",// ye relatively batayega top se kitna dur agar 50% matlab 50% dur
 end:"top 0%",
 scrub:5}
 }
