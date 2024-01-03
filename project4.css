@@ -1,0 +1,480 @@
+*{
+padding:0;
+margin:0;
+box-sizing: border-box;
+font-family: 'Jost', sans-serif;
+font-family: 'Montserrat', sans-serif;
+
+}
+
+html,body{
+    scroll-behavior: smooth; 
+    height:100%;
+    width:100%
+}
+
+.cursor
+{
+    height:20px;
+    width:20px;
+    border-radius: 50%;
+position:  fixed;
+color:black;
+z-index: 1500;
+background-color:rgb(103, 114, 9);
+top:0%;
+right:0%;
+transition:background-image 0.5s   /* imp thing so that transition works properly this makes sure that transition only when their is a background image */
+
+}
+
+
+video:hover {
+    cursor: none; /* Hide the cursor when hovering over the video */
+  }
+
+
+.main
+{
+    background-color: black;
+}  
+
+.page1
+{
+    min-height:80vw;
+    width:100vw;  
+    position: relative;
+    z-index: 4;
+}
+
+/* how to make position of nabv fixed while scrollling
+we could achive it easily by adjusting some css property and keeping it outside main in html */
+
+nav
+{
+    /* background-color: blue; */
+    height:10vh;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    gap:35%;
+    color:white;
+    padding: 2vh 4vh;
+    position: fixed;
+    z-index: 10;          
+    
+    mix-blend-mode: difference;
+
+}
+
+nav>h1
+{
+font-weight: 400;
+font-size: 3vh;
+font-family: 'Jost', sans-serif;
+font-family: 'Montserrat', sans-serif;
+
+
+
+}
+
+.nav-right
+{
+display: flex;
+flex-direction: row;
+gap:15%;
+color:white;
+}
+
+.nav-right>h3:nth-child(1){
+ 
+    border-bottom: solid white
+}
+
+
+.page1>h1{
+  font-size: 7vw;
+   width:70%;
+   font-family:PP Mori;
+   color:white;
+   font-weight: 400;
+   margin-left: 40vh;
+   transform: translate(-8%,95%);
+}
+
+.page1>h1:nth-child(2)
+{
+    transform: translate(18%,95%);
+   
+}
+.page1>video{    
+    width: 50%;
+    margin-top: 10vw;
+    position: relative;
+    top:30%;
+    left: 25%;
+   
+}
+
+
+.page2
+{
+    height:100vh;
+    width:100vw;
+    background-color: white; 
+    position: relative;
+    /* border-bottom: 0.13vw solid black; */
+   
+}
+
+.page2>h1{
+    font-size: 5vw;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    top:10%;
+    color:black
+}
+
+.page2>h2{
+    font-size: 1.6vw;
+    position: relative;
+    top:30%;
+    left:10%;
+    font-weight: 500;
+}
+
+
+.page2>p{
+    font-size: 1.1vw;
+    position: relative;
+    top:5%;
+    left:70%;
+    font-weight: 300;
+    width:25%;
+    margin-bottom: 30px;  
+}
+
+.page2>button{
+
+   position: relative;
+   height:4vh;
+   width:25vw;
+   text-align: center;
+   top:5%;
+   left:70%;
+   border-radius: 30px;
+   font-size: large;
+   background-color:rgb(237, 190, 249);
+  
+  
+}
+
+.page3
+{
+    height:100vh;
+    width:100vw;
+    /* background-color: blue;  */
+    display: flex;
+    position: relative;
+   
+}
+
+.page3>video
+{
+    height:60vh;
+    width:40vw;
+    position: absolute;
+    top:6%;
+    left:63%
+}
+
+.page3>img{
+    height:60vh;
+    width:50vw;
+    position: absolute;
+    top:31%
+}
+
+.page3>h1>span
+{
+   font-weight: 500;
+   font-size: larger;
+}
+
+.page3>h1
+{
+    top:91%;
+    left:33.5%;
+    position:absolute;
+    font-weight: 300;
+    font-size: large;
+}
+
+
+.page3>h2{
+    top:55%;
+    left:66%;
+    position:absolute;
+    z-index: 1000;
+    font-weight: 300;
+    font-size: large;
+}
+
+.page3>h2>span
+{
+   font-weight: 500;
+   font-size: larger;
+}
+
+
+.page3>h3{
+    top:5%;
+    left:28%;
+    position:absolute;
+    z-index: 1000;
+    font-weight: 500;
+    font-size: 4vw;
+}
+
+.page4
+{
+    height:100vh;
+    width:100vw;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    border-bottom: 2px solid white;
+}
+
+
+
+.page4>video
+{
+    height:40vh;
+    width:40vw;
+    position: absolute;
+    top:0%;
+    left:63%
+}
+
+.page4>img{
+    height:45vh;
+    width:40vw;
+    position: absolute;
+    top:10%
+}
+
+.page4>h1>span
+{
+   font-weight: 500;
+   font-size: larger;
+}
+
+.page4>h1
+{
+    top:55%;
+    left:23.5%;
+    position:absolute;
+    font-weight: 300;
+    z-index: 1000;
+    font-size: large;
+}
+
+
+.page4>h2{
+    top:40%;
+    left:70%;
+    position:absolute;
+    z-index: 1000;
+    font-weight: 300;
+    font-size: large;
+}
+
+.page4>h2>span
+{
+   font-weight: 500;
+   font-size: larger;
+   
+}
+
+.page4-bottom
+{
+    
+    height:42%;
+    width:100%;
+    /* background-color: black; */
+    position:absolute;
+    bottom:0%
+}
+
+
+.page4-bottom>h1
+{
+    color:rgb(237, 190, 251);
+    font-size: 3vw;
+    font-weight: 400;
+    top:18%;
+    left:3%;
+    position:absolute;
+}
+
+.page4-bottom>.circle
+{
+    top:8%;
+    right:3%;
+    height:7.5vw;
+    width:7.5vw;
+    border-radius:50%;
+    background-color:rgb(237, 190, 251);
+    position: absolute;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.page5
+{
+    height:120vh;
+    width:100vw;
+    /* background-color: aqua; */
+    position: relative;
+    padding: 300px 100px;
+     border-bottom: 2px solid white;
+}
+
+
+.hovering-element
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* background-color: aquamarine; */
+    
+}
+
+
+
+.hovering-element>img
+{
+    height:350px;
+    width:400px;
+  position:absolute;
+  opacity:0;
+  transition-duration:  all ease-out 0.5s;
+   transform: translateY(10%) rotate(2deg);  /*changes made */
+}
+
+
+.hovering-element>img:nth-child(1)
+{
+  left:5%;
+
+}
+
+.hovering-element>img:nth-child(3)
+{
+  right:5%;
+
+}
+
+
+.text-div
+{
+    /* background-color: blue;  */
+    height:8vh;
+    overflow: hidden;
+    position: relative;
+    z-index: 9;
+    
+}
+    
+.text-div>h1
+{
+    font-size: 7vh;
+    transition:  all ease-out 0.5s;
+    color: white;
+}
+
+
+.hovering-element:hover .text-div>h1{ 
+    transform:translateY(-100%);
+    color: #EDBFFF;
+
+}
+/* hover works only if the element we want to hover is a part of parent otherwise hover  wnat work */
+.hovering-element:hover img   
+{
+    transform:translateY(0%);
+opacity:1
+}
+
+
+
+.page6
+{
+    height:120vh;
+    width:100vw;
+    /* background-color: aqua; */
+    position: relative;
+    padding: 350px 100px;
+     border-bottom: 2px solid white;
+}
+
+.page6>h1{
+    font-size: 7vh;
+    font-weight: 400;
+    color:white;
+    padding:30px 19px;
+    border-bottom: 2px solid white;
+}
+
+.box
+{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    
+    width:100%;
+    border-bottom: 2px solid white;
+    padding:30px 20px
+}
+
+.box>h3{
+    font-size: 2vh;
+    font-weight: 300;
+    color:white;
+    /* background-color:red ; */
+    }
+
+
+    .page6>h1:hover
+    {
+
+        color:pink;
+        font-weight:500 ;
+    }
+
+    .box>h3:hover{
+       
+        color:pink;
+        font-weight:400 ;
+        /* background-color:red ; */
+        }
+
+.purple
+{
+    height:100vh;
+    width:100vw;
+    position:absolute;
+    background-color: #EDBFFF;
+    z-index: 9;
+    opacity:0
+}
+
+
+    
