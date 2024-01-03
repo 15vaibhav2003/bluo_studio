@@ -71,7 +71,7 @@ delay:0.5
 
 
 
-var tl= gsap.timeline({
+ var tl= gsap.timeline({
     scrollTrigger:
 {
     trigger:".page1>h1",

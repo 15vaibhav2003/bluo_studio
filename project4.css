@@ -1,3 +1,35 @@
+@font-face{
+    font-family:ppmori ;
+    src:url(./PPMori-Extralight.woff2)
+}
+
+@font-face{
+    font-family:ppmori1 ;
+    src:url(./PPMori-ExtralightItalic.woff2)
+}
+
+@font-face{
+    font-family:ppmori2 ;
+    src:url(./PPMori-Regular.woff2)
+}
+
+@font-face{
+    font-family:ppmori3 ;
+    src:url(./PPMori-RegularItalic.woff2)
+}
+
+@font-face{
+    font-family:ppmori4 ;
+    src:url(./PPMori-SemiBold.woff2)
+}
+
+@font-face{
+    font-family:ppmori5 ;
+    src:url(./PPMori-SemiBoldItalic.woff2)
+}
+
+
+
 *{
 padding:0;
 margin:0;
@@ -99,12 +131,12 @@ color:white;
    color:white;
    font-weight: 400;
    margin-left: 40vh;
-   transform: translate(-8%,95%);
+   transform: translate(18%,95%);
 }
 
 .page1>h1:nth-child(2)
 {
-    transform: translate(18%,95%);
+    transform: translate(-4%,95%);
    
 }
 .page1>video{    
